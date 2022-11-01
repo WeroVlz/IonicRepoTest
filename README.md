@@ -1,1 +1,3 @@
 # IonicRepoTest
+
+Clonar con Git 
