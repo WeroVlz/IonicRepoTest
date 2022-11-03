@@ -1,3 +1,6 @@
 nombres
 edgar
 ivan
+Juan
+Diego
+Paty
