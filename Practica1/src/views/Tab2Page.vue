@@ -28,7 +28,7 @@
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 import { getDatabase, ref, onValue } from "firebase/database";
 //import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';

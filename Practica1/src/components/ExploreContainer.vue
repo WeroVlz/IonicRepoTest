@@ -6,8 +6,7 @@
   </div>
 </template>
 
-<script>
-import { IonChip } from '@ionic/vue';
+<script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
