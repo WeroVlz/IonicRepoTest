@@ -16,8 +16,7 @@ export default defineComponent({
     IonRouterOutlet
   },
   created(){
-    const auth = getAuth()
-
+    const auth = getAuth();
     signInWithEmailAndPassword(auth, "velazquezblue@gmail.com", "edgar123").then((userCredential) => {
       const user = userCredential.user
 
@@ -26,7 +25,11 @@ export default defineComponent({
       }else{
         console.log("autenticado correctamente", user)
       }
-    })
-  }
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+  },
 });
 </script>
