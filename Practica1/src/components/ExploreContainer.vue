@@ -2,6 +2,7 @@
   <div id="container">
     <strong>{{ name }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-chip>Default</ion-chip>
   </div>
 </template>
 
@@ -10,6 +11,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'ExploreContainer',
+  components: { IonChip },
   props: {
     name: String
   }
